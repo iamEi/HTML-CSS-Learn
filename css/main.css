@@ -1,0 +1,217 @@
+* { margin: 0; padding: 0; }
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Fira Sans', sans serif;
+}
+
+main section{
+    width: 100%;
+    min-height: 600px;
+}
+
+footer{
+    margin: 0;
+    min-height: 100px;
+    background-color: #f4f4f4;
+}
+
+footer p{
+    /* text-align: center; */
+}
+
+/* section div h1{ */
+    /* position: relative; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* width: 10% */
+/* } */
+
+div button{
+    position: absolute;
+    font-size: 28px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(194, 204, 204, 0.719);
+    top: 60%;
+    left: 8%;
+    transition: all 0.5s;
+    border: none;
+}
+
+#hi_div{
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+    /* display: inline-block; */
+    height: 30%;
+    width: 40%;
+    top: 5%;
+    left: 15%;
+    border-radius: 20px;
+    /* border: 4px solid black; */
+    
+}
+
+#hi_div h1{
+    position: absolute;
+    font-size: 82px;
+    font-weight: 500;
+    top: 0px;
+    left: 0px;
+    color: #f4f4f4;
+    padding: 20px;
+    /* border: 4px solid white; */
+    font-size: 82;
+}
+
+#about_div{
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+    height: 44%;
+    width: 30%;
+    top: -5%;
+    left: 45%;
+    border-radius: 20px;
+}
+
+#about_div p{
+    position: absolute;
+    top: 0px;
+    padding: 20px;
+    font-size: 24px;
+    color: #f4f4f4;
+    border-radius: inherit;
+    background-color: rgba(0,0,0, 0.5);
+}
+
+#welcome{
+    position: absolute;
+    font-size: 82px;
+    letter-spacing: 10px;
+    color: #f4f4f4;
+    top: 20%;
+    left: 0;
+    padding: 20px;
+    width: fit-content
+}
+
+#welcome2{
+    position: absolute;
+    font-size: 16px;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    color: #f4f4f4;
+    top: 38%;
+    left: 7%;
+    width: fit-content
+}
+
+
+#myprojects{
+    position: relative;
+    font-size: 64px;
+    color: #f4f4f4;
+    top: 45%;
+    left: 40%;
+    width: fit-content
+}
+
+#contactme{
+    position: relative;
+    font-size: 64px;
+    color: #f4f4f4;
+    top: 45%;
+    left: 40%;
+    width: fit-content
+}
+
+#navbar{
+    position: fixed;
+    background-color: rgba(194, 204, 204, 1);
+    padding: 10px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    transition: top 0.5s;
+    z-index: 1;
+}
+
+#navbar ul{
+    white-space: nowrap;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#navbar li{
+    position: relative;
+    right: 2%;
+    float: right;
+    display: block;
+    padding: 10px;
+
+    font-size: 32px;
+}
+
+#navbar li a{
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #4b4b4b; 
+    transition: all 0.5s;
+}
+
+main section div{
+    width: 50%;
+    border: 4px solid white;
+    background: rgba(235, 230, 230, 0.9);
+}
+
+.parallax_home {
+    background-image: url("images/bg1-1.jpg");
+    height: 800px;
+    width: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax_about {
+    background-image: url("images/bg2.jpeg");
+    height: 800px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax_projects {
+    background-image: url("images/bg3.jpg");
+    height: 800px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax_contact {
+    background-image: url("images/bg4.jpeg");
+    height: 800px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/* PSEUDOCLASSES */
+#navbar a:hover{
+    color: rgb(245, 246, 247);
+    background-color: #f4511e;
+}
+
+div button:hover{
+    color: rgb(245, 246, 247);
+    background-color: #f4511e;
+}
+
