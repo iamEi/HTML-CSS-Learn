@@ -11,34 +11,79 @@ main section{
 }
 
 footer{
+    position: relative;
     margin: 0;
-    min-height: 100px;
+    padding: 0;
+    min-height: 500px;
     background-color: #97999b;
 }
 
-footer div{
-    position: relative;
-    width: 100%;
-    top: 20px;
+footer h1{
+    font-weight: lighter;
 }
 
-footer div ul{
+
+.email{
+    position: relative;
+    margin: 0;
+    width: 500px;
+    height: 400px;
+    left: 50%;
+    transform: translate(-50%,10%);
+    text-align: center;
+
+}
+
+.forms{
+    height: inherit;
+    width: inherit;
     position: absolute;
+    background-color: rgba(0,0,0,0.1);
+    border: 0px;
+    border-radius: 24px;
+}
+
+.forms input{
+    display: block;
+    padding: 15px;
+    width: 150px;
+    margin: 10px auto;
+    text-align: center;
+    background: none;
+    border: 2px solid rgb(99, 97, 97);
+    border-radius: 24px;
+    transition: width 0.5s;
+    outline: none;
+}
+
+#message{
+    transition: width 0.5s, height 1s;
+    width: 150px;
+    height: 20px;
+}
+
+
+.links ul{
+    position:   absolute;
     margin: 0 auto;
-    width: 40%;
+    bottom: 0%;
+    width: 30%;
     left: 35%;
     white-space: nowrap;
+    /* border: 4px solid pink; */
 }
 
-footer ul li{
+footer li{
     width: 33%;
     display: inline-block;
-
+    align-content: center;
+    padding: 10px;
 }
 
 footer ul img{
     width: 50px;
     height: 40px;
+    transition: all 0.5s ease;
 }
 
 
@@ -46,13 +91,22 @@ div button{
     position: absolute;
     font-size: 28px;
     padding: 20px;
+    padding-right: 20px;
     border-radius: 20px;
     background-color: rgba(194, 204, 204, 0.719);
+    width: 215px;
     top: 90%;
     left: 23%;
-    transition: all 0.5s;
+    transition: all 1s;
     border: none;
 }
+
+div button:after{
+    content: '\00bb';
+    position: absolute;
+    right: 15px;
+    opacity: 0;
+} 
 
 #hi_div{
     position: relative;
@@ -152,38 +206,39 @@ div button{
 #navbar{
     position: fixed;
     background-color: rgba(194, 204, 204, 1);
-    padding: 10px;
+    padding: 5px;
     top: 0px;
     left: 0px;
     width: 100%;
-    transition: top 0.5s;
     z-index: 1;
+    transition: top 1s;
 }
 
 #navbar ul{
-    white-space: nowrap;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 0;
+    padding: 5px;
+    padding-right: 10px;
+    list-style-type: none;
+    white-space: nowrap;
 }
 
 #navbar li{
-    position: relative;
-    right: 2%;
-    float: right;
-    display: block;
-    padding: 10px;
-
-    font-size: 32px;
+    float: inline-end;
 }
 
 #navbar li a{
-    border-radius: 20px;
-    padding: 10px;
+    display: block;
+    font-size: 24px;
+    width: 100px;
     text-align: center;
+    border-radius: 24px;
+    padding: 10px;
     text-decoration: none;
     color: #4b4b4b; 
     transition: all 0.5s;
 }
+
 
 main section div{
     width: 50%;
@@ -218,8 +273,8 @@ main section div{
     background-size: cover;
 }
 .parallax_contact {
-    background-image: url("images/bg4.jpeg");
-    height: 800px; 
+    background-image: url("images/bg3.jpg");
+    height: 500px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -229,13 +284,37 @@ main section div{
 
 
 /* PSEUDOCLASSES */
-#navbar a:hover{
+#navbar ul li a:hover{
     color: rgb(245, 246, 247);
     background-color: #f4511e;
+    width: 120px;
+    font-size: 32px;
+    /* text-align: left; */
 }
+
 
 div button:hover{
     color: rgb(245, 246, 247);
     background-color: #f4511e;
+    width: 250px;
+    
 }
 
+div button:hover::after{
+    opacity: 1;
+}
+
+.forms input:focus{
+    width: 280px;
+    border: 5px solid #4b4b4b;
+}
+
+#message:focus{
+    width: 300px;
+    height: 100px;
+}
+
+footer ul img:hover{
+    width: 60px;
+    height: 50px;
+}
