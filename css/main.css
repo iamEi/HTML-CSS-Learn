@@ -328,3 +328,23 @@ footer ul img:hover{
     width: 60px;
     height: 50px;
 }
+
+
+::-webkit-scrollbar{
+    width: 15px;
+    margin-block: 0.5em;
+    transition: all 1s ease;
+}
+
+::-webkit-scrollbar-track{
+    background: #97999b;    
+}
+
+::-webkit-scrollbar-thumb{
+    background: #4b4b4b;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #f4f4f4;
+    border-radius: 10px;
+}
